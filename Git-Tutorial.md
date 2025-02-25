@@ -70,3 +70,31 @@ git commit -m "<Deine Commit Message>"
 ```bash
 git log --oneline
 ```
+## Reise in die Vergangenheit
+- mit dem Befehl `git checkout <hash>` kann ich den früheren Zustand eines Projektes mir anschauen im sog. 'detached HEAD Mode'
+- um wieder zurückzukommen in die 'Gegenwart'
+  - `git checkout -` bzw. `git switch -` oder
+  - `git checkout bzw. switch main`
+
+### ACHTUNG 
+- sollte ich von einer früheren Version neu beginnen wollen und meine Änderungen bis dahin verwerfen, kann ich mit einem hard Reset von einem alten Zeitpunkt neu beginnen
+```bash
+git reset --hard <commit-hash>
+```
+- wenn die Änderungen, die danach gemacht wurden nicht gelöscht werden sollen, dann wird stattdessen aus dem vergangen commit ein neuer Branch abgeleitet und nicht resetet
+
+## Branching
+um neue Features zu implementieren oder zu testen generieren wir einen neuen ‘Branch’ der erst einmal unabhängig vom ‘main’ Branch ist
+
+1. neuen branch erstellen:
+   ```bash
+   git branch <branch_name>
+   ```
+2. in den neuen branch wechseln
+   ```bash
+   git checkout <branch_name>
+   ```
+   oder besser und neuer
+   ```bash
+   git switch <branch_name>
+   ```
