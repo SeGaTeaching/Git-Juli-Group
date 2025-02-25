@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=' + API_KEY
-    
+city_name = "Stuttgart"
 response = requests.get(url.format(city_name))
 data = response.json()
 weather = {
