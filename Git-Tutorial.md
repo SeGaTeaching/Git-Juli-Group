@@ -61,3 +61,5 @@ git rm --cached <name_der_datei>
 ```bash
 git commit -m "<Deine Commit Message>"
 ```
+## Der zweite Commit
+- lege eine neue Datei Deiner Wahl an und füge diese zum Staging hinzu mit `git add` und commite anschließen diese neuen Stand Deines Arbeitsverzeichnisses
