@@ -7,5 +7,6 @@ class Person:
         return self.name
 
 heike = Person("Heike", 31)
-
 print(heike)
+erich = Person("Erich", 23)
+print(erich)
