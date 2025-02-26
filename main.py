@@ -6,3 +6,6 @@ class Person:
     def __str__(self):
         return self.name
 
+heike = Person("Heike", 31)
+
+print(heike)
